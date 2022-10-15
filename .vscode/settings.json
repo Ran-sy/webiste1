@@ -1,0 +1,13 @@
+{
+    /* @file "settings.json"*/
+    "git-autoconfig.configList": [
+        {
+            "user.email": "Ranim.taboush@noahmatrix.se",
+            "user.name": "Ranim"
+        },
+        {
+            "user.email": "raneem.1999.ta@gmail.com",
+            "user.name": "ran-sy"
+        }
+    ]
+}
