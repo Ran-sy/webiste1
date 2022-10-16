@@ -12,26 +12,29 @@
     <div class="appBar">
         <img class="logo" src="images/logo.png">
         <ul>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">About-us</a></li>
-            <li><a href="#">Home</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Welcome">Welcome</a></li>
+            <li><a href="#works">works</a></li>
+            <li><a href="#whyUs">why-us</a></li>
+            <li><a href="#offers">offers</a></li>
+            <li><a href="#products">products</a></li>
+            <li><a href="#footer">contact</a></li>
         </ul>
         <div class="shadowBox"></div>
     </div>
     <!-- build -->
-    <div class="build">
+    <div id="Home" class="build">
         <div class="buildDiv">
-        <h1 class="buildTitle">TOGETHER, WE BUILD TOMORROW</h1>
-        <p class="buildSubtitle">A aspernatur illo consequuntur. Ipsum, tempora.</p>
-        <div class="buildBtns">
-            <button id="start">Free Trail</button>
-            <button id="more">Learn More!</button>
-        </div></div>
+            <h1 class="buildTitle">TOGETHER, WE BUILD TOMORROW</h1>
+            <p class="buildSubtitle">A aspernatur illo consequuntur. Ipsum, tempora.</p>
+            <div class="buildBtns">
+                <button id="start">Free Trail</button>
+                <button id="more">Learn More!</button>
+            </div>
+        </div>
     </div>
     <!-- Welcome -->
-    <div class="welcome boxContainer">
+    <div id="Welcome" class="welcome boxContainer">
         <dev class="header">
             <h2 class="title">welcome:</h2>
         </dev>
@@ -137,7 +140,7 @@
     <br>
     <hr class="break">
     <!-- Featured works -->
-    <div class="featured boxContainer">
+    <div id="works" class="featured boxContainer">
         <dev class="header">
             <h2 class="title">our works:</h2>
             <h3 class="subtitle">Sample of our featured work.</h3>
@@ -220,7 +223,7 @@
     <br>
     <hr class="break">
     <!-- What we offer -->
-    <div class="greyBG">
+    <div id="offers" class="greyBG">
         <div class="ourOffers boxContainer">
             <dev class="header">
                 <h2 class="title">What do we offer?</h2>
@@ -304,11 +307,11 @@
     </div>
     <hr class="break">
     <!-- Why us -->
-    <div class="whyUs boxContainer">
+    <div id="whyUs" class="whyUs boxContainer">
         <dev class="header">
             <h2 class="title">Why to choose us?</h2>
         </dev>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum exercitationem
+        <p style="padding-left: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum exercitationem
             nemo accusamus in
             consectetur eveniet cum est iusto harum quibusdam. Inventore alias asperiores saepe
             praesentium,
@@ -389,32 +392,33 @@
     <br>
     <hr class="break">
     <!-- Report -->
-    <div class="report boxContainer">
-        <div class="box">
-            <a href="#"><i class="fas fa-tv"></i></a>
-            <h3>962k</h3>
-            <p>sold hardware</p>
-        </div>
-        <div class="box">
-            <a href="#"><i class="fas fa-user-shield"></i></a>
-            <h3>138k</h3>
-            <p>secured clients</p>
-        </div>
-        <div class="box">
-            <a href="#"><i class="fas fa-sync"></i></a>
-            <h3>56</h3>
-            <p>Recyclable items</p>
-        </div>
-        <div class="box">
-            <a href="#"><i class="fas fa-store-alt"></i></a>
-            <h3>121</h3>
-            <p>Physical sore</p>
+    <div class="lightBG">
+        <div id="reports" class="report boxContainer">
+            <div class="box">
+                <a href="#"><i class="fas fa-tv"></i></a>
+                <h3>962k</h3>
+                <p>sold hardware</p>
+            </div>
+            <div class="box">
+                <a href="#"><i class="fas fa-user-shield"></i></a>
+                <h3>138k</h3>
+                <p>secured clients</p>
+            </div>
+            <div class="box">
+                <a href="#"><i class="fas fa-sync"></i></a>
+                <h3>56</h3>
+                <p>Recyclable items</p>
+            </div>
+            <div class="box">
+                <a href="#"><i class="fas fa-store-alt"></i></a>
+                <h3>121</h3>
+                <p>Physical sore</p>
+            </div>
         </div>
     </div>
-    <br>
     <hr class="break">
     <!-- pricing -->
-    <div class="pricing boxContainer">
+    <div id="pricing" class="pricing boxContainer">
         <dev class="header">
             <h2 class="title">PRICING:</h2>
             <h3 class="subtitle">choose the right plan for your business</h3>
@@ -480,7 +484,7 @@
     </div>
     <hr class="break">
     <!-- team box -->
-    <div class="techBG">
+    <div id="teamDesc" class="techBG">
         <div class="team boxContainer">
             <div class="header">
                 <h2 class="title">Our Team</h2>
@@ -525,7 +529,7 @@
     </div>
     <hr class="break">
     <!-- team cards -->
-    <div class="teamDiv boxContainer">
+    <div id="ourTeam" class="teamDiv boxContainer">
         <div class="header">
             <h2 class="title">Our Team</h2>
             <h3 class="subtitle">Meat our team of experts</h3>
@@ -580,7 +584,7 @@
     </div>
     <hr class="break">
     <!-- recent products -->
-    <div class="products boxContainer">
+    <div id="products" class="products boxContainer">
         <dev class="header">
             <h2 class="title">PRODUCTS:</h2>
             <h3 class="subtitle">choose the right products for your personal use</h3>
@@ -640,7 +644,8 @@
             </div>
         </div>
     </div>
-    <div class="footer boxContainer darkBG">
+    <!-- footer -->
+    <div id="footer" class="footer boxContainer darkBG">
         <img src="images/logo.png" alt="footer image" class="footerImg">
         <ul>
             <li><a href="#"><i class="fab fa-facebook-square"></i> </a> </li>

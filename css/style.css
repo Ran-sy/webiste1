@@ -23,20 +23,22 @@
 body {
     position: relative;
     overflow: auto;
-    margin: 0;
     font-family: Roboto;
     background: rgb(184, 180, 22);
     background: radial-gradient(circle, rgba(184, 180, 22, 0.6776611694152923) 16%, rgba(131, 184, 22, 0.6776611694152923) 35%, rgba(22, 184, 156, 1) 50%, rgba(75, 22, 184, 1) 75%, rgba(184, 22, 50, 1) 100%);
 }
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .boxContainer {
     margin: 0 auto;
-    padding: 0;
     width: 80%;
 }
 
 .header .subtitle {
     text-transform: capitalize;
+    padding: 10px;
 }
 
 .header .title {
@@ -45,6 +47,7 @@ body {
     letter-spacing: 2px;
     color: rgba(255, 255, 255, .7);
     position: relative;
+    padding-top: 10px;
 }
 
 .header .title::after {
@@ -63,6 +66,9 @@ body {
 
 .lightBG {
     background-color: #ddd;
+    padding: 25px;
+    transform: translate(2%, 0);
+    width: 100%;
 }
 
 .techBG {
@@ -84,7 +90,7 @@ body {
 .appBar {
     z-index: 5;
     position: fixed;
-    padding: 25px;
+    padding: 10px;
     top: 0;
     left: 0;
     width: 100%;
@@ -94,20 +100,19 @@ body {
 
 .appBar img {
     float: left;
-    width: 10%;
-    padding: 0;
-    margin: 0;
+    width: 70px;
     margin-left: 8%;
 }
 
 .appBar ul {
-    padding: 0;
-    margin: 0;
-    margin-right: 10%;
+    margin-right: 8%;
+    float: right;
+    width: 70%;
 }
 
 .appBar ul li {
-    float: right;
+    float: left;
+    font-size: 14px;
     list-style: none;
     margin-left: 5%;
 }
@@ -123,11 +128,9 @@ body {
 }
 
 .shadowBox {
-    padding: 0px;
-    margin: 0;
     margin-top: 50px;
     width: 100%;
-    height: 10px;
+    height: 5px;
     background-color: rgba(131, 184, 22, .5);
     position: absolute;
     bottom: 0;
@@ -163,7 +166,6 @@ body {
 .buildTitle {
     font: 3rem fantasy;
     letter-spacing: 1px;
-    margin: 0;
 }
 
 .buildSubtitle {
@@ -178,17 +180,27 @@ body {
 .buildBtns #start,
 .buildBtns #more {
     width: 150px;
-    padding: 15px;
+    padding: 25px;
     border-radius: 3px;
     border: none;
+    box-shadow: 5px 5px rgba(0, 0, 0, .2);
     color: #ddd;
     background-color: #83B816;
-    box-shadow: 3px 3px rgba(0, 0, 0, .2);
+    cursor: pointer;
 }
-
 .buildBtns #more {
     background-color: #ddd;
     color: #B81632;
+}
+
+.buildBtns #start:hover {
+    color: #000;
+    background-color: #B81632;
+}
+
+.buildBtns #more:hover {
+    color: #fff;
+    background-color: #00AFF0;
 }
 
 /* //////////welcome////////// */
@@ -357,13 +369,11 @@ body {
 .pic h4 {
     color: #fff;
     font-family: IndieFlower;
-    margin: 0;
     opacity: 0;
 }
 
 .pic ul {
     list-style: none;
-    padding: 0;
     margin-top: 0;
     font-size: 24px;
     opacity: 0;
@@ -476,8 +486,6 @@ body {
 .carousel ol,
 .carousel li {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .carousel {
@@ -498,6 +506,7 @@ body {
 }
 
 .carouselSlide {
+    margin-top: 10px;
     position: relative;
     flex: 0 0 100%;
     width: 100%;
@@ -506,6 +515,7 @@ body {
 
 .carouselSlide dl {
     width: 70%;
+    padding-top: 10px;
     font: 24px Raleway;
     text-align: justify;
     text-indent: 10px;
@@ -579,7 +589,7 @@ body {
 }
 
 .report .box {
-    box-shadow: 5px 10px rgb(116, 88, 172);
+    box-shadow: 5px 7px rgb(116, 88, 172);
     flex: 1;
     margin-top: 10px;
 }
@@ -588,12 +598,10 @@ body {
     text-align: center;
     letter-spacing: 1px;
     color: rgba(255, 255, 255, 0.7);
-    padding: 0;
 }
 
 .report .box a {
     font-size: 40px;
-    margin: 0;
     padding: 0 43%;
 }
 
@@ -625,7 +633,6 @@ body {
 .pricing .cards {
     width: 100%;
     margin: 0 3%;
-    padding: 0;
 }
 
 .pricing .cards .card {
@@ -733,6 +740,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 0 auto 10px;
+    padding-bottom: 10px;
 }
 
 .teamCrew .teamImg img {
@@ -774,6 +782,7 @@ body {
     justify-content: space-around;
     text-align: center;
     flex-direction: column;
+    padding-bottom: 10px;
 }
 
 .teamCards img {
@@ -794,7 +803,6 @@ body {
 .teamCards .teamIcons ul {
     margin: 10px;
     height: 20vw;
-    padding: 0;
     list-style: none;
     opacity: 0;
     transition: all ease-in 1s;
@@ -802,7 +810,6 @@ body {
 
 .teamCards .teamIcons ul li {
     text-align: center;
-    margin: 0;
 }
 
 .teamCards .teamIcons ul li a {
@@ -841,7 +848,7 @@ body {
 .grid .box::before {
     cursor: pointer;
     position: absolute;
-    bottom: 17px;
+    bottom: 10px;
     height: 0;
     border: none;
     opacity: 0;
@@ -910,11 +917,10 @@ body {
 .grid .box ul {
     width: 100%;
     overflow: auto;
-    padding: 0;
 }
 
 .grid .box ul li {
-    padding: 5px;
+    padding: 0 5px 10px;
     list-style: none;
     display: inline-flex;
 }
@@ -936,7 +942,7 @@ body {
 }
 
 .grid .box .fast a {
-    color: #55acee;
+    color: #4086bb;
 }
 
 .grid .box .guaranteed a {
@@ -956,10 +962,6 @@ body {
     width: 250px;
     padding: 10px;
     margin-bottom: 10px;
-}
-
-.footer ul {
-    padding: 0;
 }
 
 .footer ul li {
