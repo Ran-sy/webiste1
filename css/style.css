@@ -764,11 +764,12 @@ body {
 /* //////////team cards/////////// */
 .teamCards {
     overflow: auto;
+    margin-left: 5%;
 }
 
 .teamCard {
     position: relative;
-    margin: 10px 3%;
+    margin: 10px 1%;
     float: left;
     background-color: #83B816;
     border-radius: 10px;
