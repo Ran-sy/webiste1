@@ -66,8 +66,7 @@ body {
 
 .lightBG {
     background-color: #ddd;
-    padding: 25px;
-    transform: translate(2%, 0);
+    padding:25px 0;
     width: 100%;
 }
 
@@ -81,9 +80,7 @@ body {
 
 .greyBG {
     background-image: url(../images/grey-bg.jpg);
-    background-size: 100vw 100vh;
     background-attachment: fixed;
-    width: 100%;
 }
 
 /* /////////appBar////////// */
@@ -119,6 +116,7 @@ body {
 
 .appBar ul li a:hover {
     color: #83B816;
+    text-decoration: underline;
 }
 
 .appBar ul li a {
@@ -139,9 +137,8 @@ body {
 
 /* //////////build//////////// */
 .build {
-    width: 100vw;
     height: 100vh;
-    transform: translate(0, 0);
+    width: 100%;
     background: rgba(0, 0, 0, 0.5) url(../images/build.jpg);
     background-position: center;
     background-size: 100% 100%;
@@ -179,8 +176,8 @@ body {
 
 .buildBtns #start,
 .buildBtns #more {
-    width: 150px;
-    padding: 25px;
+    width: 20%;
+    padding: 2%;
     border-radius: 3px;
     border: none;
     box-shadow: 5px 5px rgba(0, 0, 0, .2);
@@ -206,7 +203,7 @@ body {
 /* //////////welcome////////// */
 .welcomeBoxes {
     display: flex;
-    gap: 20px;
+    gap: 2%;
 }
 
 .welcomeAllBoxes {
